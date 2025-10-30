@@ -4,4 +4,5 @@ import tailwind from '@tailwindcss/vite';
 
 export default defineConfig({
   plugins: [react(), tailwind()],
+  base: '/react-js-jsx-and-css-mastering-front-end-development-PaulKioko420/',
 });
