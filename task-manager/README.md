@@ -1,72 +1,100 @@
-# Task Manager Application
+# Task Manager
 
-A modern React task management application built with Vite that helps users organize and track their tasks efficiently.
+A small React + Vite task manager demo built during Week 3 of the course "Mastering Front-End Development".
+
+Live demo: https://rad-klepon-ca8d38.netlify.app
+
+## Summary
+
+This project is a lightweight task manager app demonstrating React (JSX), component structure, local state management, and styling. It was created as part of a frontend lab to practice building reusable components and wiring a small app with Vite.
 
 ## Features
 
-- Task creation, editing, and deletion
-- Theme switching capability (light/dark mode)
-- Responsive design
-- Local storage persistence
-- Task list management
-- Modern React components and hooks
+- Add, list, and remove tasks
+- Simple responsive layout
+- Reusable components: Button, Card, Navbar, Footer, TaskManager, PostList
+- Uses Vite for fast development and build
 
-## Technologies Used
+## Quick start (Windows PowerShell)
 
-- React.js
-- Vite
-- CSS
-- Context API for state management
-- Local Storage for data persistence
+1. Install dependencies
 
-## Project Structure
-
-```
-src/
-├── api/
-│   └── fetchPosts.js
-├── components/
-│   ├── Button.jsx
-│   ├── Card.jsx
-│   ├── Footer.jsx
-│   ├── Layout.jsx
-│   ├── Navbar.jsx
-│   ├── PostList.jsx
-│   └── TaskManager.jsx
-├── context/
-│   └── ThemeContext.jsx
-├── hooks/
-│   └── useLocalStorage.jsx
-├── pages/
-│   ├── About.jsx
-│   └── Home.jsx
-└── utils/
-    └── helpers.js
+```powershell
+npm install
 ```
 
-## Getting Started
+2. Run the dev server
 
-1. Clone the repository
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
-3. Start the development server:
-   ```bash
-   npm run dev
-   ```
-4. Open your browser and navigate to the local development server (typically http://localhost:5173)
+```powershell
+npm run dev
+```
 
-## Available Scripts
+3. Build for production
 
-- `npm run dev` - Starts the development server
-- `npm run build` - Creates a production build
-- `npm run preview` - Previews the production build locally
+```powershell
+npm run build
+```
+
+4. Preview the production build
+
+```powershell
+npm run preview
+```
+
+## NPM scripts
+
+The following scripts are defined in `package.json`:
+
+- `dev` — start Vite dev server
+- `build` — build production assets to `dist`
+- `preview` — locally preview the production build
+- `predeploy` — runs the build before deploying
+- `deploy` — deploy `dist` to GitHub Pages (uses `gh-pages`)
+
+To deploy to GitHub Pages (the project already includes a `homepage` field):
+
+```powershell
+npm run predeploy; npm run deploy
+```
+
+## Project structure
+
+Relevant files and folders:
+
+- `index.html` — app entry
+- `src/main.jsx` — React entry point
+- `src/App.jsx` — main app component
+- `src/components/` — UI components (Button, Card, Navbar, Footer, PostList, TaskManager)
+- `src/pages/` — top-level pages (Home, About)
+- `src/api/` — API helpers (fetchPosts.js)
+- `src/context/` — React context (`ThemeContext.jsx`)
+- `src/hooks/` — custom hooks (useLocalStorage)
+- `src/utils/` — utilities
+- `public/` — static assets
 
 ## Contributing
 
-Feel free to submit issues and enhancement requests.
+Small improvements welcome. Suggested steps:
+
+1. Fork the repo
+2. Create a feature branch
+3. Make changes, add tests where appropriate
+4. Open a pull request with a clear description of changes
 
 ## License
 
-This project is licensed under the MIT License.
+This project is provided for learning purposes. Add a proper license if you plan to reuse this commercially.
+
+## Author
+
+Paul Kioko (repository owner)
+
+---
+
+If you'd like, I can also:
+
+- Add a short usage screenshot or GIF to this README
+- Add a CONTRIBUTING.md and LICENSE file
+- Run a quick spellcheck/lint on markdown
+
+Tell me which extras you'd prefer and I'll add them.
